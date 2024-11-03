@@ -62,7 +62,7 @@ git clone https://github.com/langgenius/dify.git
 #### Our DSL File for Dify
 You can download from link bellow.
 ```bash
-git clone https://github.com/langgenius/dify.git
+https://github.com/zal-ghiffari/CareKnow-Robot/blob/main/CareKnow%20Bot%202.yml
 ```
 
 ### 4. Insert RAG To Knowledge
