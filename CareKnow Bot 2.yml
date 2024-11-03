@@ -1,0 +1,122 @@
+app:
+  description: ''
+  icon: 💊
+  icon_background: '#FFEAD5'
+  mode: agent-chat
+  name: CareKnow Bot 2
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: true
+    max_iteration: 5
+    strategy: react
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets:
+      - dataset:
+          enabled: true
+          id: 62d60cd9-4ad6-47ab-b8bc-849c3276963e
+    reranking_mode: reranking_model
+    retrieval_model: single
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    image:
+      detail: high
+      enabled: true
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: llama3.1
+    provider: ollama
+  more_like_this:
+    enabled: false
+  opening_statement: 'Welcome to the careknow bot service! 👨‍⚕️👩‍⚕️ Ready to start
+    understanding your health condition? Let''s dive into creating an unforgettable
+    health check-up experience. From basic health to the nearest clinic referral,
+    I will give you all the important details and tips, all wrapped up in a fun and
+    engaging package! 💊🥼
+
+
+    Remember, your journey starts here, and I am here to guide you every step of the
+    way. You can try asking me:'
+  pre_prompt: '### System:
+
+    You are an honest and respectful assistant in the field of basic health checks.
+    You must answer user questions using only the context given to you. If you do
+    not know the answer, just say you don''t know. Don''t try to make up an answer.
+
+
+    ### Context:
+
+    {context}
+
+
+    ### User:
+
+    {question}
+
+
+    ### Response:
+
+    Health Condition: Explanation of health condition
+
+    Recommended Medication: Recommended medication
+
+    Recommended Lifestyle: Recommended lifestyle
+
+    Referral Clinic:
+
+    1. Clinic Name - Address: Clinic Address - Telephone Number: 02178890362 - Opening
+    hours: 24 hours every day - Services: general polyclinic, dental polyclinic, obstetric
+    polyclinic, and Laboratory.
+
+    '
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: false
+  suggested_questions:
+  - Can you help me with my basic health condition?
+  - What are some suggested medications for me experiencing dizziness?
+  - I’m planning to visit a clinic. Can you help me find the nearest clinic?
+  suggested_questions_after_answer:
+    enabled: true
+  text_to_speech:
+    enabled: false
+    language: ''
+    voice: ''
+  user_input_form:
+  - text-input:
+      default: ''
+      label: age
+      required: false
+      variable: age
+  - text-input:
+      default: ''
+      label: temp
+      required: false
+      variable: temp
+  - text-input:
+      default: ''
+      label: face
+      required: false
+      variable: face
+version: 0.1.1
