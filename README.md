@@ -1,5 +1,9 @@
+![snapshot](https://github.com/zal-ghiffari/CareKnow-Robot/blob/main/snapshotapp.png)
+
 # CareKnow Robot
 Robot Generative AI Berbentuk Vending Machine untuk Deteksi Awal Masalah Kesehatan
+
+![workflow](https://github.com/zal-ghiffari/CareKnow-Robot/blob/main/carenowflow.png)
 
 ## Instruction
 Berikut petunjuk atau langkah-langkah untuk menggunakan CareKnow Robot (Generative AI)
