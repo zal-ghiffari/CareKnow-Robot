@@ -56,7 +56,7 @@ docker compose up -d
 #### RAG Data
 You can download from link bellow.
 ```bash
-git clone https://github.com/langgenius/dify.git
+https://github.com/zal-ghiffari/CareKnow-Robot/tree/main/Knowledge%20Data
 ```
 
 #### Our DSL File for Dify
